@@ -18,3 +18,20 @@ for i in range(len(nums)-3):
                                sorted([nums[i], nums[j], nums[k], nums[n]]) not in res):
                                    res.append(sorted([nums[i], nums[j], nums[k], nums[n]]))
 print(res)
+
+# Сумма двух
+
+a = list(map(int,input().split()))
+t = int(input())
+
+f = True
+for i in range(len(a)):
+    if not f:
+        break
+    for k in range(len(a) - 1):
+        if a[i] + a[k] == t:
+            print(f"{a[i]} + {a[k]} = {t}")
+            f = False
+            break
+    if f:
+        print("Нет пары")
