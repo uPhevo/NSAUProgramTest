@@ -19,7 +19,7 @@ for i in range(len(nums)-3):
                                    res.append(sorted([nums[i], nums[j], nums[k], nums[n]]))
 print(res)
 
-# Сумма двух
+# Two Sum
 
 a = list(map(int,input().split()))
 t = int(input())
